@@ -45,7 +45,7 @@ def log_history(first_operand, operator, second_operand, result):
 
 def show_history():
     try:
-        with open('./source/history_log.txt', 'r') as file:
+        with open('history_log.txt', 'r') as file:
             return file.read()
     except FileNotFoundError:
         return "No history found."
